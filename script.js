@@ -7,9 +7,17 @@ createApp({
     return{
 
       message: 'Ciao da VueJS! Speriamo di capirci :)',
-      image: ` <img src="img1.webp" alt="">`
+
+      image: ` <img class="mt-5" src="img0.jpg" alt="">`,
 
     }
     
+  },
+
+  methods: {
+    switchImg(){
+      this.image =  ` <img class="mt-5" src="img1.webp" alt="">`
+      this.message = '.......'
+    }
   }
 }).mount('#app')
