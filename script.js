@@ -7,7 +7,7 @@ createApp({
     return{
 
       message: 'Ciao da VueJS! Speriamo di capirci :)',
-      image: 'img1.webp'
+      image: ` <img src="img1.webp" alt="">`
 
     }
     
