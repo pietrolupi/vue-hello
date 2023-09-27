@@ -2,7 +2,18 @@ img{
   width: 400px;
 }
 
+body{
+  background-color: lightgray;
+}
+
 .white{
   color: white;
 }
 
+.red{
+  color:red;
+}
+
+.green{
+  color: green;
+}
