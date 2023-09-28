@@ -14,10 +14,15 @@ createApp({
 
       greenText: 'green',
 
+      redText: 'red',
+
       coloreTesto2: '',
 
       messaggioCheCambia: 'Questo messaggio cambia scrivendo qua sotto e premendo INVIO',
-      messaggioCambiato : ''
+
+      messaggioCambiato : '',
+
+      isActive: true
     }
     
   },
