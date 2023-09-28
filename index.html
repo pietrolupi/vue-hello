@@ -12,11 +12,21 @@
   <div class="container my-5">
     <div id="app">
     
-      <h1 :class=" (!isOkFlag) ? 'red' : 'green' ">{{message}}</h1>
+      <h1 :class=" (!isOkFlag) ? 'red' : 'green' ">{{message}}</h1> 
     
       <div v-html = "image" ></div>
       
+
       <button class="my-5 btn btn-danger  " @click = "switchImg">Verifica status post lezione</button>
+
+      <div class="messaggio2"></div>
+      <h4 class="pt-3">Inserisci dei colori per modificare il testo (red, green)</h4>
+      <input class="mb-5  " type="text" v-model = "coloreTesto2">
+      <p :class="coloreTesto2">Un pochino di testo su cui sperimentare.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet pariatur expedita mollitia ipsum aut eligendi veritatis accusantium recusandae magni quibusdam. </p>
+
+      <h2 class="mt-3">{{messaggioCheCambia}}</h2>
+      <input type="text" @keyup.enter = "cambioMessaggio()"
+      v-model = "messaggioCambiato">
     </div>
     
   </div>
